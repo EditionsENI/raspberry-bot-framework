@@ -1,0 +1,40 @@
+{
+  "name": "node-unicorn",
+  "version": "0.0.1",
+  "description": "Drive a Unicorn pHat in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "server": "node ./lib/server/led-server.js &",
+    "color": "node ./lib/colors/index.js &",
+    "game": "node ./lib/rubicorn/index.js &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kylir/node-unicorn.git"
+  },
+  "keywords": [
+    "raspberry",
+    "pi",
+    "zero",
+    "unicorn",
+    "phat",
+    "pimoroni"
+  ],
+  "author": "Jason Forest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kylir/node-unicorn/issues"
+  },
+  "homepage": "https://github.com/Kylir/node-unicorn#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.3.2",
+    "express": "^4.14.0",
+    "request": "^2.78.0",
+    "rpi-ws281x-native": "^0.8.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
